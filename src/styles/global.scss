@@ -1,0 +1,267 @@
+// Utilities
+@import "./variables";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    background-color: $background;
+}
+#mobileMenu {
+    display: none;
+    &.show {
+        display: block
+    }
+}
+.imprint, .policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    max-width: 1140px;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: 50px;
+        @media only screen and (max-width: 760px) {
+            font-size: 2em;
+        }
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        @media only screen and (max-width: 760px) {
+            font-size: 1.5em;
+        }
+    }
+
+    .part {
+        width: 100%;
+
+        ul {
+            margin-top: 1rem;
+        }
+    }
+
+    &.container {
+        @media only screen and (max-width: 760px) {
+            padding-top: 40px;
+        }
+    }
+}
+.footer {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .flex-container {
+        margin-top: 20px;
+        max-width: 1140px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid lightgray;
+        padding: 20px;
+        @media only screen and (max-width: 760px) {
+            flex-direction: column;
+        }
+
+        .grid-third {
+            width: 33.33%;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            @media only screen and (max-width: 760px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+button.btn.btn-primary, a.btn.btn-primary {
+    background-color: $secondary;
+    border: 2px solid $secondary;
+    color: white;
+    border-radius: 100px;
+    padding: 9px 15px;
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $secondary;
+        color: $secondary;
+    }
+    &:active {
+        background-color: transparent !important;
+        border: 2px solid $secondary !important;
+        color: $secondary !important;
+    }
+}
+button.btn.btn-primary.heroButton, a.btn.btn-primary.heroButton {
+    background-color: $secondary;
+    border: 2px solid $secondary;
+    color: white;
+    border-radius: 100px;
+    padding: 9px 15px;
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+    &:active {
+        background-color: transparent !important;
+        border: 2px solid white !important;
+        color: white !important;
+    }
+}
+.headline-container {
+    display: flex;
+    justify-content: center;
+}
+p.highlight {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: $secondary;
+}
+.section {
+    padding-top: 120px;
+
+    .not-full {
+        max-width: 1200px;
+    }
+
+    &.full {
+        margin-top: 120px;
+        padding-top: 0;
+        width: 100%;
+
+        &.quote {
+            background-image: url("/quote.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+        }
+    }
+
+    .flex-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        @media only screen and (max-width: 760px) {
+            display: block;
+            text-align: center;
+            .paragraph, .highlight {
+                text-align: justify;
+            }
+        }
+
+        .grid-half {
+            width: 50%;
+            padding: 0 20px;
+            @media only screen and (max-width: 760px) {
+                width: 100%;
+            }
+        }
+
+        .grid-third {
+            width: 33.33%;
+            padding: 0 20px;
+            @media only screen and (max-width: 760px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .header-marker {
+        width: 3px;
+        height: 2em;
+        background-color: $secondary;
+        margin-right: 10px;
+        margin-top: 3px;
+        @media only screen and (max-width: 760px) {
+            display: none;
+        }
+    }
+}
+h1 {
+    font-size: 3em;
+
+    &.section-header {
+        text-transform: uppercase;
+        color: $secondary;
+    }
+}
+
+a.link {
+    text-decoration: none;
+    color: $secondary;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h2 {
+    font-size: 2em;
+
+    &.section-header {
+        text-transform: uppercase;
+        color: $secondary;
+    }
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.67em;
+}
+
+.callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+    code {
+        border-radius: 3px;
+    }
+    & + .bs-callout {
+        margin-top: -5px;
+    }
+}
+@each $name, $color in (default, #777), (primary, $secondary), (success, #5cb85c),
+    (danger, #d9534f), (warning, #f0ad4e), (info, $accent1), (bdc, #29527a)
+{
+    .callout-#{$name} {
+        border-left-color: $color;
+        h4 {
+            color: $color;
+        }
+    }
+}

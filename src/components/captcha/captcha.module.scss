@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.reload_href {
+    font-size: 1.5em;
+    margin-top: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 25px;
+}
+
+.canvas {
+    float: left;
+    display: inline;
+}
+
+.input {
+    margin-top: 10px;
+    max-width: 150px;
+}

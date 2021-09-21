@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quoteContainer {
+    padding: 20px;
+    max-width: 600px;
+    z-index: 3;
+
+    .quoteText {
+        color: white;
+        font-style: italic;
+        font-size: 1.5em;
+    }
+    
+    .quoteAuthor {
+        color: white;
+    }
+}

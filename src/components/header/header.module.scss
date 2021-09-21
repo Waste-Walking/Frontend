@@ -1,0 +1,171 @@
+@import "../../styles/variables";
+
+@media only screen and (max-width: 760px) {
+    .navContainer {
+        width: 100%;
+        background-color: white;
+        display: block;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+
+        .navigation {
+            padding: 0 20px;
+            width: 100%;
+            max-width: 1140px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+
+            .logoContainer {
+                padding: 10px;
+
+                .marg {
+                    margin-right: 60px;
+                }
+            }
+
+            .navlinkContainer {
+                display: flex;
+                align-items: center;
+
+                .navLink {
+                    color: $font;
+                    font-size: 18px;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $secondary;
+                    }
+                }
+            }
+
+            .hamburger {
+                display: block;
+                margin-top: 6px;
+
+                .bar {
+                    height: 5px;
+                    width: 40px;
+                    background-color: $secondary;
+                    display: block;
+                    border-radius: 5px;
+                    transition: 0.3s ease;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .navigationSub {
+                display: none;
+            }
+        }
+
+        .mobileMenu {
+            padding-inline-start: 0;
+            text-align: center;
+            list-style-type: none;
+            margin-top: 30px;
+            height: 100vh;
+
+            li {
+                margin-bottom: 20px;
+            }
+
+            .navLink {
+                color: $font;
+                font-size: 18px;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 761px) {
+    .navContainer {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+
+        .navigation {
+            padding: 0 20px;
+            width: 100%;
+            max-width: 1140px;
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+
+            .logoContainer {
+                padding: 10px;
+
+                .marg {
+                    margin-right: 60px;
+                }
+            }
+
+            .navlinkContainer {
+                display: flex;
+                align-items: center;
+
+                .navLink {
+                    color: $font;
+                    font-size: 18px;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $secondary;
+                    }
+                }
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            .navigationSub {
+                padding: 0 20px;
+                width: 100%;
+                max-width: 1140px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+
+                .logoContainer {
+                    padding: 10px;
+
+                    .marg {
+                        margin-right: 20px;
+                    }
+                }
+
+                .navlinkContainer {
+                    display: flex;
+                    align-items: center;
+
+                    .navLink {
+                        color: $font;
+                        font-size: 18px;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mobileMenu {
+            display: none;
+        }
+    }
+}

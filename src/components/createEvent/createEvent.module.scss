@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.centerDiv {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 320px) {
+    .centerDiv {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .centerDiv {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .centerDiv {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .centerDiv {
+        max-width: 800px;
+    }
+}
+
+.positionInput {
+    border: 0;
+    width: auto;
+}
+
+.checkbox {
+    float: left;
+    display: inline;
+    width: 3%;
+}
+
+.checkbox_label {
+    padding-top: 9px;
+}
+
+.submitButton {
+    float: right;
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.consent_checkBox {
+    margin-top: 10px;
+}

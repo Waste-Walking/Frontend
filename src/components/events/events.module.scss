@@ -1,0 +1,105 @@
+@import "../../styles/variables";
+
+.centerDiv {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 320px) {
+    .centerDiv {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .centerDiv {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .centerDiv {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .centerDiv {
+        max-width: 800px;
+    }
+}
+
+.Card {
+    position: relative;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: auto;
+    background: $background;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.31);
+    border-radius: 10px;
+}
+
+.SpinnerDiv {
+    margin-top: 50px;
+}
+
+.ErrorDiv {
+    margin-top: 50px !important;
+    max-width: 1140px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Spinner {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.locationIcon {
+    font-size: 1.5em;
+    color: $font;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.location {
+    margin-left: 10px;
+}
+
+.location a {
+    color: $font;
+}
+
+.dateIcon {
+    font-size: 1.5em;
+    color: $font;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.date {
+    margin-left: 10px;
+}
+
+.divider {
+    border-top: 2px solid #bbb;
+}
+
+.content br {
+    display: none;
+}
+
+.content p {
+    padding: 0;
+    margin: 0;
+}

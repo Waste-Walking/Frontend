@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.editor {
+    height: auto;
+    min-height: 200px;
+    max-width: 1400px;
+    color: $font;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ced4da;
+}
+
+.counter {
+    color: $font;
+    float: right;
+    margin-top: 5px;
+}
+
+.formatText {
+    color: $font;
+    margin-top: 5px;
+}
+
+#reload_href {
+    cursor: pointer;
+    color: blue;
+}
