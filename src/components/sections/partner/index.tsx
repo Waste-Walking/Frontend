@@ -12,7 +12,7 @@ export const Partner: React.FC = () => {
                 <h2 className="text-center section-header">Mit freundlicher Unterstützung von</h2>
             </div>
             <div className="flex-container">
-                <img src="/oedp.png"></img>
+                <img src="/oedp.png" width="300" height="300"></img>
             </div>
         </Container>
     )
