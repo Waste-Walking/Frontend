@@ -20,7 +20,7 @@ export const Checklist: React.FC = () => {
                 Du möchtest diese Checkliste verbessern? Dann kontaktiere uns{" "}
                 <a
                     className="link"
-                    href="mailto:github@oedb.de"
+                    href="mailto:github@oedp.de"
                 >
                     hier
                 </a>
